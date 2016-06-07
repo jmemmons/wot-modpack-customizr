@@ -1,0 +1,10 @@
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\bin\x86\Release\Mod Pack Customizr.exe.config
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\bin\x86\Release\Mod Pack Customizr.exe
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\bin\x86\Release\Mod Pack Customizr.pdb
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\obj\x86\Release\Mod_Pack_Customizr.About.resources
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\obj\x86\Release\Mod_Pack_Customizr.BusyWindow.resources
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\obj\x86\Release\Mod_Pack_Customizr.Modpack_InstallerUI.resources
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\obj\x86\Release\Mod_Pack_Customizr.Properties.Resources.resources
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\obj\x86\Release\Mod Pack Customizr.csproj.GenerateResource.Cache
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\obj\x86\Release\Mod Pack Customizr.exe
+C:\Users\jmemmons\documents\visual studio 2015\Projects\Mod Pack Customizr\obj\x86\Release\Mod Pack Customizr.pdb

@@ -1,0 +1,12 @@
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\bin\Debug\Mod Pack Customizr.exe.config
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\bin\Debug\Mod Pack Customizr.exe
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\bin\Debug\Mod Pack Customizr.pdb
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\bin\Debug\Ionic.Zip.dll
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\bin\Debug\Ionic.Zip.xml
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\obj\Debug\Mod_Pack_Customizr.About.resources
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\obj\Debug\Mod_Pack_Customizr.BusyWindow.resources
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\obj\Debug\Mod_Pack_Customizr.Modpack_InstallerUI.resources
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\obj\Debug\Mod_Pack_Customizr.Properties.Resources.resources
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\obj\Debug\Mod Pack Customizr.csproj.GenerateResource.Cache
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\obj\Debug\Mod Pack Customizr.exe
+C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\Mod Pack Customizr\obj\Debug\Mod Pack Customizr.pdb
