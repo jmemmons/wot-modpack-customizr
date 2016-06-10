@@ -1,0 +1,15 @@
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Release\Mod Pack Customizr.exe.config
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Release\Mod Pack Customizr.exe.manifest
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Release\Mod Pack Customizr.application
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Release\Mod Pack Customizr.exe
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Release\Mod Pack Customizr.pdb
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod_Pack_Customizr.About.resources
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod_Pack_Customizr.BusyWindow.resources
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod_Pack_Customizr.Modpack_InstallerUI.resources
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod_Pack_Customizr.Properties.Resources.resources
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\WoT Modpack Customizr.csproj.GenerateResource.Cache
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod Pack Customizr.TrustInfo.xml
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod Pack Customizr.exe.manifest
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod Pack Customizr.application
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod Pack Customizr.exe
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Release\Mod Pack Customizr.pdb

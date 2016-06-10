@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modpack_InstallerUI));
             this.gamePathLabel = new System.Windows.Forms.Label();
             this.browseButton = new System.Windows.Forms.Button();
@@ -60,6 +61,7 @@
             this.uninstallAllModsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolstripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.gameDirGroupBox.SuspendLayout();
             this.modGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -141,6 +143,7 @@
             this.autoAimCheckbox.Size = new System.Drawing.Size(104, 17);
             this.autoAimCheckbox.TabIndex = 18;
             this.autoAimCheckbox.Text = "Auto Aim by Sae";
+            this.modToolTip.SetToolTip(this.autoAimCheckbox, resources.GetString("autoAimCheckbox.ToolTip"));
             this.autoAimCheckbox.UseVisualStyleBackColor = true;
             this.autoAimCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -153,6 +156,7 @@
             this.gunDirectionCheckbox.Size = new System.Drawing.Size(133, 17);
             this.gunDirectionCheckbox.TabIndex = 17;
             this.gunDirectionCheckbox.Text = "Minimap Gun Direction";
+            this.modToolTip.SetToolTip(this.gunDirectionCheckbox, "This mod shows the direction in which the enemies are facing on the minImap.");
             this.gunDirectionCheckbox.UseVisualStyleBackColor = true;
             this.gunDirectionCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -165,6 +169,8 @@
             this.autoRepairCheckbox.Size = new System.Drawing.Size(208, 17);
             this.autoRepairCheckbox.TabIndex = 16;
             this.autoRepairCheckbox.Text = "Auto Repair and Auto Fire Extinguisher";
+            this.modToolTip.SetToolTip(this.autoRepairCheckbox, "The Auto Repair and Auto Fire Extinguisher works by instantly activating the part" +
+        "icular kits you have available to you.");
             this.autoRepairCheckbox.UseVisualStyleBackColor = true;
             this.autoRepairCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -177,6 +183,8 @@
             this.xvmCheckbox.Size = new System.Drawing.Size(73, 17);
             this.xvmCheckbox.TabIndex = 15;
             this.xvmCheckbox.Text = "XVM Mod";
+            this.modToolTip.SetToolTip(this.xvmCheckbox, "The XVM mod shows a real time view of the statistics of all the players in the lo" +
+        "bby.");
             this.xvmCheckbox.UseVisualStyleBackColor = true;
             this.xvmCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -189,6 +197,8 @@
             this.xrayCheckbox.Size = new System.Drawing.Size(55, 17);
             this.xrayCheckbox.TabIndex = 14;
             this.xrayCheckbox.Text = "X-Ray";
+            this.modToolTip.SetToolTip(this.xrayCheckbox, "The X-Ray mod allows the user to see the enemy when they are behind structures su" +
+        "ch as walls, terrain, and other tanks.");
             this.xrayCheckbox.UseVisualStyleBackColor = true;
             this.xrayCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -201,6 +211,8 @@
             this.tundraCheckbox.Size = new System.Drawing.Size(60, 17);
             this.tundraCheckbox.TabIndex = 13;
             this.tundraCheckbox.Text = "Tundra";
+            this.modToolTip.SetToolTip(this.tundraCheckbox, "The Tundra mod removes dense forest and shrubs so that you can see your enemies b" +
+        "etter.");
             this.tundraCheckbox.UseVisualStyleBackColor = true;
             this.tundraCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -213,6 +225,8 @@
             this.tracersCheckbox.Size = new System.Drawing.Size(62, 17);
             this.tracersCheckbox.TabIndex = 12;
             this.tracersCheckbox.Text = "Tracers";
+            this.modToolTip.SetToolTip(this.tracersCheckbox, "The Tracers mod allows the user to be able to visually see where the enemy shots " +
+        "are originating from.");
             this.tracersCheckbox.UseVisualStyleBackColor = true;
             this.tracersCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -225,6 +239,8 @@
             this.somethingHitCheckbox.Size = new System.Drawing.Size(117, 17);
             this.somethingHitCheckbox.TabIndex = 11;
             this.somethingHitCheckbox.Text = "Something Was Hit";
+            this.modToolTip.SetToolTip(this.somethingHitCheckbox, "This mod gives the user a text-based display when they hit a tank that they can n" +
+        "o longer see.");
             this.somethingHitCheckbox.UseVisualStyleBackColor = true;
             this.somethingHitCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -237,6 +253,7 @@
             this.shadowsCheckbox.Size = new System.Drawing.Size(70, 17);
             this.shadowsCheckbox.TabIndex = 10;
             this.shadowsCheckbox.Text = "Shadows";
+            this.modToolTip.SetToolTip(this.shadowsCheckbox, "The Shadows mod allows the user to see the last known location of the enemy.");
             this.shadowsCheckbox.UseVisualStyleBackColor = true;
             this.shadowsCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -249,6 +266,8 @@
             this.reloadTimerCheckbox.Size = new System.Drawing.Size(89, 17);
             this.reloadTimerCheckbox.TabIndex = 9;
             this.reloadTimerCheckbox.Text = "Reload Timer";
+            this.modToolTip.SetToolTip(this.reloadTimerCheckbox, "The Reload Timer shows the user the current reload time for all players in the ga" +
+        "me.");
             this.reloadTimerCheckbox.UseVisualStyleBackColor = true;
             this.reloadTimerCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -261,6 +280,9 @@
             this.redBallCheckbox.Size = new System.Drawing.Size(66, 17);
             this.redBallCheckbox.TabIndex = 8;
             this.redBallCheckbox.Text = "Red Ball";
+            this.modToolTip.SetToolTip(this.redBallCheckbox, "The Red Ball mod is another wonderful mod for artillery players. When this mod is" +
+        " activated, it shows a red ball on the current enemy location after their camouf" +
+        "lage has activated.");
             this.redBallCheckbox.UseVisualStyleBackColor = true;
             this.redBallCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -273,6 +295,8 @@
             this.penetrationCalculatorCheckbox.Size = new System.Drawing.Size(130, 17);
             this.penetrationCalculatorCheckbox.TabIndex = 7;
             this.penetrationCalculatorCheckbox.Text = "Penetration Calculator";
+            this.modToolTip.SetToolTip(this.penetrationCalculatorCheckbox, "This mod gives the user a number based on where they are aiming. This number can " +
+        "be used to decide if a particular shot will be effective or not.");
             this.penetrationCalculatorCheckbox.UseVisualStyleBackColor = true;
             this.penetrationCalculatorCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -285,6 +309,8 @@
             this.efficiencyCheckbox.Size = new System.Drawing.Size(172, 17);
             this.efficiencyCheckbox.TabIndex = 6;
             this.efficiencyCheckbox.Text = "Efficiency And WN8 Calculator";
+            this.modToolTip.SetToolTip(this.efficiencyCheckbox, "This mod gives the user a panel during gameplay to see their current Efficiency r" +
+        "ating as well as their WN8 score for every match.");
             this.efficiencyCheckbox.UseVisualStyleBackColor = true;
             this.efficiencyCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -297,6 +323,7 @@
             this.directionBoxCheckbox.Size = new System.Drawing.Size(89, 17);
             this.directionBoxCheckbox.TabIndex = 5;
             this.directionBoxCheckbox.Text = "Direction Box";
+            this.modToolTip.SetToolTip(this.directionBoxCheckbox, resources.GetString("directionBoxCheckbox.ToolTip"));
             this.directionBoxCheckbox.UseVisualStyleBackColor = true;
             this.directionBoxCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -309,6 +336,8 @@
             this.destroyedObjectsCheckbox.Size = new System.Drawing.Size(172, 17);
             this.destroyedObjectsCheckbox.TabIndex = 4;
             this.destroyedObjectsCheckbox.Text = "Destroyed Objects On Minimap";
+            this.modToolTip.SetToolTip(this.destroyedObjectsCheckbox, "This mod shows the user where all of the destroyed enemies and friendlies are on " +
+        "the minimap and in-game.");
             this.destroyedObjectsCheckbox.UseVisualStyleBackColor = true;
             this.destroyedObjectsCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -321,6 +350,8 @@
             this.damagePanelCheckbox.Size = new System.Drawing.Size(161, 17);
             this.damagePanelCheckbox.TabIndex = 3;
             this.damagePanelCheckbox.Text = "Damage Panel + XVM Hitlog";
+            this.modToolTip.SetToolTip(this.damagePanelCheckbox, "This mod shows a panel during gameplay that records the shots you have taken as w" +
+        "ell as the shots you have made.");
             this.damagePanelCheckbox.UseVisualStyleBackColor = true;
             this.damagePanelCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -333,6 +364,9 @@
             this.battleAssistantCheckbox.Size = new System.Drawing.Size(98, 17);
             this.battleAssistantCheckbox.TabIndex = 2;
             this.battleAssistantCheckbox.Text = "Battle Assistant";
+            this.modToolTip.SetToolTip(this.battleAssistantCheckbox, "The Battle Assistant mod is especially good for artillery.  This mod gives the us" +
+        "er an angled view rather than a top-down view which helps with\r\nplacing shots ov" +
+        "er buildings and rocks.");
             this.battleAssistantCheckbox.UseVisualStyleBackColor = true;
             this.battleAssistantCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
@@ -345,6 +379,7 @@
             this.allInOneWithoutXVMCheckbox.Size = new System.Drawing.Size(140, 17);
             this.allInOneWithoutXVMCheckbox.TabIndex = 1;
             this.allInOneWithoutXVMCheckbox.Text = "All in One - without XVM";
+            this.modToolTip.SetToolTip(this.allInOneWithoutXVMCheckbox, "The All in One mod contains every mod listed here, excluding XVM.");
             this.allInOneWithoutXVMCheckbox.UseVisualStyleBackColor = true;
             this.allInOneWithoutXVMCheckbox.CheckedChanged += new System.EventHandler(this.allInOneWithoutXVMCheckbox_CheckedChanged);
             // 
@@ -357,6 +392,7 @@
             this.allInOneCheckbox.Size = new System.Drawing.Size(125, 17);
             this.allInOneCheckbox.TabIndex = 0;
             this.allInOneCheckbox.Text = "All in One - with XVM";
+            this.modToolTip.SetToolTip(this.allInOneCheckbox, "The All in One mod contains every mod listed here, including XVM.");
             this.allInOneCheckbox.UseVisualStyleBackColor = true;
             this.allInOneCheckbox.CheckedChanged += new System.EventHandler(this.allInOneCheckbox_CheckedChanged);
             // 
@@ -484,6 +520,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolstripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uninstallAllModsToolStripMenuItem;
+        private System.Windows.Forms.ToolTip modToolTip;
     }
 }
 

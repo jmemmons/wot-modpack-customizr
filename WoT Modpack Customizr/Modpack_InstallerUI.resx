@@ -117,6 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="modToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <data name="autoAimCheckbox.ToolTip" xml:space="preserve">
+    <value>This mod is a simple Aimbot. Right-clicking during gameplay activates the aimbot. There
+are additional controls to aim at specific places on the enemy.
+Numpad 8 = Turrent
+Numpad 5 = Body
+Numpad 2 = Tracks</value>
+  </data>
+  <data name="directionBoxCheckbox.ToolTip" xml:space="preserve">
+    <value>The Direction Box indicator shows the user where current enemies are when they are NOT facing their direction. During gameplay you will notice different colors.
+Green = Spotted by team, not within target range.
+Purple = Able to be targeted.
+Red = Danger, Enemy nearby</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

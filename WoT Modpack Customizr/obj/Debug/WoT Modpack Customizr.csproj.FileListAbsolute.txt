@@ -14,3 +14,4 @@ C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\WoT Modpack Customizr\ob
 C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.TrustInfo.xml
 C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.exe.manifest
 C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.application
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Debug\Mod Pack Customizr.exe.config

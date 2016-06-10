@@ -62,7 +62,7 @@
             // contactLinkLabel
             // 
             this.contactLinkLabel.AutoSize = true;
-            this.contactLinkLabel.Location = new System.Drawing.Point(309, 56);
+            this.contactLinkLabel.Location = new System.Drawing.Point(300, 56);
             this.contactLinkLabel.Name = "contactLinkLabel";
             this.contactLinkLabel.Size = new System.Drawing.Size(115, 13);
             this.contactLinkLabel.TabIndex = 3;

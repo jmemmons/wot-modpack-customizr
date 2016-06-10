@@ -22,7 +22,7 @@ namespace Mod_Pack_Customizr
     public partial class Modpack_InstallerUI : Form
     {
         // Global Variables used throughout program.
-        public string selectedPath = null;
+        public string selectedPath = "";
         private About aboutForm;
         private BusyWindow busyWindow;
 
@@ -37,11 +37,14 @@ namespace Mod_Pack_Customizr
         {
             FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
             folderBrowser.Description = "Select the game directory where World of Tanks is located. \n i.e. C:\\Games\\World of Tanks";
-            if (folderBrowser.ShowDialog() == DialogResult.OK)
+            if ((folderBrowser.ShowDialog() == DialogResult.OK) && ContainsResModsFolder(folderBrowser.SelectedPath))
             {
                 selectedPath = folderBrowser.SelectedPath;
                 fileTextBox.AppendText(selectedPath);
                 enableAllCheckboxes();
+            } else
+            {
+                MessageBox.Show("This is not the correct game directory!");
             }
             
         }
@@ -127,6 +130,15 @@ namespace Mod_Pack_Customizr
             if (allInOneCheckbox.Checked)
             {
                 disableAllCheckboxes();
+                // Uncheck all other boxes.
+                foreach (var x in modGroupBox.Controls)
+                {
+                    var checkbox = x as CheckBox;
+                    if (checkbox.Checked && checkbox.TabIndex == 0)
+                        continue;
+                    else
+                        checkbox.Checked = false;
+                }
                 installButton.Enabled = true;
             }
             else
@@ -143,6 +155,16 @@ namespace Mod_Pack_Customizr
             if (allInOneWithoutXVMCheckbox.Checked)
             {
                 disableAllCheckboxes();
+
+                // Uncheck all other boxes.
+                foreach (var x in modGroupBox.Controls)
+                {
+                    var checkbox = x as CheckBox;
+                    if (checkbox.Checked && checkbox.TabIndex == 1)
+                        continue;
+                    else
+                        checkbox.Checked = false;
+                }
                 installButton.Enabled = true;
             }
             else
@@ -160,9 +182,7 @@ namespace Mod_Pack_Customizr
             foreach (Control c in modGroupBox.Controls)
             {
                 if ((c is CheckBox) && ((CheckBox)c).Checked)
-                {
                     str += c.Text + "\n";
-                }
             }
             return str + "\n";
         }
@@ -176,9 +196,7 @@ namespace Mod_Pack_Customizr
             {
                 // Creates path names based on selected mods and adds it to the list.
                 if ((c is CheckBox) && ((CheckBox)c).Checked)
-                {
                     modList.Add(Application.StartupPath + "\\" + c.Text);
-                }
             }
             return modList;
         }
@@ -190,14 +208,10 @@ namespace Mod_Pack_Customizr
             System.IO.DirectoryInfo directoryInfo = new DirectoryInfo(pathToDelete);
             
             foreach (FileInfo file in directoryInfo.GetFiles())
-            {
                 file.Delete();
-            }
 
             foreach (DirectoryInfo dir in directoryInfo.GetDirectories())
-            {
                 dir.Delete(true);
-            }
         }
 
 
@@ -205,9 +219,7 @@ namespace Mod_Pack_Customizr
         private void bgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             if (e.Error != null)
-            {
                 MessageBox.Show(e.Error.Message);
-            }
             else
             {
                 MessageBox.Show("Install Completed!");
@@ -220,6 +232,7 @@ namespace Mod_Pack_Customizr
         // This is the method that is where the installation is triggered. It creates a constructor the Install and sends it the necessary parameters to begin the installation.
         private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
         {
+            // Constructor for the Install object which performs the installation.
             Install installMod = new Install();
 
             // Install class requires two parameters to install mod. Argument 1 = path of selected mods. Argument 2 = path of game directory.
@@ -254,11 +267,15 @@ namespace Mod_Pack_Customizr
 
                 // Launch background thread.
                 bgWorker.RunWorkerAsync(arguments);
-            }
 
-            // Show the user that something is happening. The RunWorkerCompleted method will dispose this window when the installation is complete.
-            busyWindow = new BusyWindow();
-            busyWindow.ShowDialog();
+                // Show the user that something is happening. The RunWorkerCompleted method will dispose this window when the installation is complete.
+                busyWindow = new BusyWindow();
+                busyWindow.ShowDialog();
+            }
+            else
+            {
+                uncheckAllBoxes();
+            }
         }
 
 
@@ -276,24 +293,30 @@ namespace Mod_Pack_Customizr
             else
             {
                 // Make sure this really is the correct folder.
-                if (ContainsResModsFolder())
+                if (ContainsResModsFolder(selectedPath))
                 {
-                    string pathToDelete = selectedPath + "\\res_mods";
-                    Console.WriteLine(pathToDelete);
-                    deleteAllFiles(pathToDelete);
+                    string resModsPath= selectedPath + "\\res_mods";
+                    string resAudioPath = selectedPath + "\\res\\audio";
+                    deleteAllFiles(resModsPath);
+                    deleteAllFiles(resAudioPath);
 
                     // TODO: Let the user know something actually happened.
                     //busyWindow = new BusyWindow();
                     //busyWindow.ShowDialog();
+                }
+                else
+                {
+                    string errorMessage = "This doesn't appear to be the correct World Of Games directory.";
+                    DialogResult errorDialog = MessageBox.Show(errorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
         }
 
 
         // Returns true if the selected directory is the actual World Of Tanks directory.
-        private bool ContainsResModsFolder()
+        private bool ContainsResModsFolder(string path)
         {
-            DirectoryInfo gamePath = new DirectoryInfo(selectedPath);
+            DirectoryInfo gamePath = new DirectoryInfo(path);
             DirectoryInfo[] test = gamePath.GetDirectories();
             if (test.Any(r => r.FullName.Equals(Path.Combine(gamePath.FullName, "res_mods"))))
             {
