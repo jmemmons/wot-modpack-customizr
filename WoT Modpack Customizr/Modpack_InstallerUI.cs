@@ -4,8 +4,8 @@
  *              a "copy and paste" executable. Many users have expressed fustration with the installation of mods so I have created an easier way
  *              to do this.
  *
- * Version:     v1.0
- * Notes:       This pack supports World of Tanks version 0.9.15. The modpack that is installed is "the manz modpack 4.0".
+ * Version:     v1.1
+ * Notes:       This pack supports World of Tanks version 9.15.0.1. The modpack that is installed is "the manz modpack 4.5".
  *
  * Programmer(s)/Contributors:  John Emmons, johnemmons@acm.org
  */
@@ -196,7 +196,7 @@ namespace Mod_Pack_Customizr
             {
                 // Creates path names based on selected mods and adds it to the list.
                 if ((c is CheckBox) && ((CheckBox)c).Checked)
-                    modList.Add(Application.StartupPath + "\\" + c.Text);
+                    modList.Add(Application.StartupPath + "\\9.15.0.1 " + c.Text);
             }
             return modList;
         }

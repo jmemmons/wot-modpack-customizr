@@ -39,7 +39,6 @@
             this.gunDirectionCheckbox = new System.Windows.Forms.CheckBox();
             this.autoRepairCheckbox = new System.Windows.Forms.CheckBox();
             this.xvmCheckbox = new System.Windows.Forms.CheckBox();
-            this.xrayCheckbox = new System.Windows.Forms.CheckBox();
             this.tundraCheckbox = new System.Windows.Forms.CheckBox();
             this.tracersCheckbox = new System.Windows.Forms.CheckBox();
             this.somethingHitCheckbox = new System.Windows.Forms.CheckBox();
@@ -112,7 +111,6 @@
             this.modGroupBox.Controls.Add(this.gunDirectionCheckbox);
             this.modGroupBox.Controls.Add(this.autoRepairCheckbox);
             this.modGroupBox.Controls.Add(this.xvmCheckbox);
-            this.modGroupBox.Controls.Add(this.xrayCheckbox);
             this.modGroupBox.Controls.Add(this.tundraCheckbox);
             this.modGroupBox.Controls.Add(this.tracersCheckbox);
             this.modGroupBox.Controls.Add(this.somethingHitCheckbox);
@@ -129,7 +127,7 @@
             this.modGroupBox.Controls.Add(this.allInOneCheckbox);
             this.modGroupBox.Location = new System.Drawing.Point(20, 99);
             this.modGroupBox.Name = "modGroupBox";
-            this.modGroupBox.Size = new System.Drawing.Size(433, 254);
+            this.modGroupBox.Size = new System.Drawing.Size(433, 231);
             this.modGroupBox.TabIndex = 4;
             this.modGroupBox.TabStop = false;
             this.modGroupBox.Text = "Step 2. Choose Mods";
@@ -140,9 +138,9 @@
             this.autoAimCheckbox.Enabled = false;
             this.autoAimCheckbox.Location = new System.Drawing.Point(15, 65);
             this.autoAimCheckbox.Name = "autoAimCheckbox";
-            this.autoAimCheckbox.Size = new System.Drawing.Size(104, 17);
+            this.autoAimCheckbox.Size = new System.Drawing.Size(125, 17);
             this.autoAimCheckbox.TabIndex = 18;
-            this.autoAimCheckbox.Text = "Auto Aim by Sae";
+            this.autoAimCheckbox.Text = "Auto Aim by Sae v22";
             this.modToolTip.SetToolTip(this.autoAimCheckbox, resources.GetString("autoAimCheckbox.ToolTip"));
             this.autoAimCheckbox.UseVisualStyleBackColor = true;
             this.autoAimCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
@@ -151,7 +149,7 @@
             // 
             this.gunDirectionCheckbox.AutoSize = true;
             this.gunDirectionCheckbox.Enabled = false;
-            this.gunDirectionCheckbox.Location = new System.Drawing.Point(15, 226);
+            this.gunDirectionCheckbox.Location = new System.Drawing.Point(248, 19);
             this.gunDirectionCheckbox.Name = "gunDirectionCheckbox";
             this.gunDirectionCheckbox.Size = new System.Drawing.Size(133, 17);
             this.gunDirectionCheckbox.TabIndex = 17;
@@ -188,25 +186,11 @@
             this.xvmCheckbox.UseVisualStyleBackColor = true;
             this.xvmCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
             // 
-            // xrayCheckbox
-            // 
-            this.xrayCheckbox.AutoSize = true;
-            this.xrayCheckbox.Enabled = false;
-            this.xrayCheckbox.Location = new System.Drawing.Point(248, 180);
-            this.xrayCheckbox.Name = "xrayCheckbox";
-            this.xrayCheckbox.Size = new System.Drawing.Size(55, 17);
-            this.xrayCheckbox.TabIndex = 14;
-            this.xrayCheckbox.Text = "X-Ray";
-            this.modToolTip.SetToolTip(this.xrayCheckbox, "The X-Ray mod allows the user to see the enemy when they are behind structures su" +
-        "ch as walls, terrain, and other tanks.");
-            this.xrayCheckbox.UseVisualStyleBackColor = true;
-            this.xrayCheckbox.CheckedChanged += new System.EventHandler(this.handleChecked);
-            // 
             // tundraCheckbox
             // 
             this.tundraCheckbox.AutoSize = true;
             this.tundraCheckbox.Enabled = false;
-            this.tundraCheckbox.Location = new System.Drawing.Point(248, 157);
+            this.tundraCheckbox.Location = new System.Drawing.Point(248, 180);
             this.tundraCheckbox.Name = "tundraCheckbox";
             this.tundraCheckbox.Size = new System.Drawing.Size(60, 17);
             this.tundraCheckbox.TabIndex = 13;
@@ -220,7 +204,7 @@
             // 
             this.tracersCheckbox.AutoSize = true;
             this.tracersCheckbox.Enabled = false;
-            this.tracersCheckbox.Location = new System.Drawing.Point(248, 134);
+            this.tracersCheckbox.Location = new System.Drawing.Point(248, 157);
             this.tracersCheckbox.Name = "tracersCheckbox";
             this.tracersCheckbox.Size = new System.Drawing.Size(62, 17);
             this.tracersCheckbox.TabIndex = 12;
@@ -234,7 +218,7 @@
             // 
             this.somethingHitCheckbox.AutoSize = true;
             this.somethingHitCheckbox.Enabled = false;
-            this.somethingHitCheckbox.Location = new System.Drawing.Point(248, 111);
+            this.somethingHitCheckbox.Location = new System.Drawing.Point(248, 134);
             this.somethingHitCheckbox.Name = "somethingHitCheckbox";
             this.somethingHitCheckbox.Size = new System.Drawing.Size(117, 17);
             this.somethingHitCheckbox.TabIndex = 11;
@@ -248,7 +232,7 @@
             // 
             this.shadowsCheckbox.AutoSize = true;
             this.shadowsCheckbox.Enabled = false;
-            this.shadowsCheckbox.Location = new System.Drawing.Point(248, 88);
+            this.shadowsCheckbox.Location = new System.Drawing.Point(248, 111);
             this.shadowsCheckbox.Name = "shadowsCheckbox";
             this.shadowsCheckbox.Size = new System.Drawing.Size(70, 17);
             this.shadowsCheckbox.TabIndex = 10;
@@ -261,7 +245,7 @@
             // 
             this.reloadTimerCheckbox.AutoSize = true;
             this.reloadTimerCheckbox.Enabled = false;
-            this.reloadTimerCheckbox.Location = new System.Drawing.Point(248, 65);
+            this.reloadTimerCheckbox.Location = new System.Drawing.Point(248, 88);
             this.reloadTimerCheckbox.Name = "reloadTimerCheckbox";
             this.reloadTimerCheckbox.Size = new System.Drawing.Size(89, 17);
             this.reloadTimerCheckbox.TabIndex = 9;
@@ -275,7 +259,7 @@
             // 
             this.redBallCheckbox.AutoSize = true;
             this.redBallCheckbox.Enabled = false;
-            this.redBallCheckbox.Location = new System.Drawing.Point(248, 42);
+            this.redBallCheckbox.Location = new System.Drawing.Point(248, 65);
             this.redBallCheckbox.Name = "redBallCheckbox";
             this.redBallCheckbox.Size = new System.Drawing.Size(66, 17);
             this.redBallCheckbox.TabIndex = 8;
@@ -290,7 +274,7 @@
             // 
             this.penetrationCalculatorCheckbox.AutoSize = true;
             this.penetrationCalculatorCheckbox.Enabled = false;
-            this.penetrationCalculatorCheckbox.Location = new System.Drawing.Point(248, 19);
+            this.penetrationCalculatorCheckbox.Location = new System.Drawing.Point(248, 42);
             this.penetrationCalculatorCheckbox.Name = "penetrationCalculatorCheckbox";
             this.penetrationCalculatorCheckbox.Size = new System.Drawing.Size(130, 17);
             this.penetrationCalculatorCheckbox.TabIndex = 7;
@@ -413,7 +397,7 @@
             // 
             this.groupBox1.Controls.Add(this.installButton);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(20, 359);
+            this.groupBox1.Location = new System.Drawing.Point(20, 336);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(433, 96);
             this.groupBox1.TabIndex = 6;
@@ -465,7 +449,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 462);
+            this.ClientSize = new System.Drawing.Size(465, 442);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.modGroupBox);
             this.Controls.Add(this.gameDirGroupBox);
@@ -474,7 +458,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Modpack_InstallerUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WoT Modpack Customizr";
+            this.Text = "WoT Modpack Customizr - for WoT 9.15.0.1";
             this.gameDirGroupBox.ResumeLayout(false);
             this.gameDirGroupBox.PerformLayout();
             this.modGroupBox.ResumeLayout(false);
@@ -497,7 +481,6 @@
         private System.Windows.Forms.CheckBox gunDirectionCheckbox;
         private System.Windows.Forms.CheckBox autoRepairCheckbox;
         private System.Windows.Forms.CheckBox xvmCheckbox;
-        private System.Windows.Forms.CheckBox xrayCheckbox;
         private System.Windows.Forms.CheckBox tundraCheckbox;
         private System.Windows.Forms.CheckBox tracersCheckbox;
         private System.Windows.Forms.CheckBox somethingHitCheckbox;

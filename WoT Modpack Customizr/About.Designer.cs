@@ -87,7 +87,7 @@
             this.programNameLabel.Name = "programNameLabel";
             this.programNameLabel.Size = new System.Drawing.Size(199, 13);
             this.programNameLabel.TabIndex = 4;
-            this.programNameLabel.Text = "Program: WoT Modpack Customizr, v1.0";
+            this.programNameLabel.Text = "Program: WoT Modpack Customizr, v1.1";
             // 
             // licenseLabel
             // 
@@ -103,10 +103,10 @@
             this.descriptionLabel.AutoSize = true;
             this.descriptionLabel.Location = new System.Drawing.Point(184, 34);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(428, 13);
+            this.descriptionLabel.Size = new System.Drawing.Size(446, 13);
             this.descriptionLabel.TabIndex = 7;
-            this.descriptionLabel.Text = "Description: This program supports WoT version 0.9.15 and includes TheManz modpac" +
-    "k.";
+            this.descriptionLabel.Text = "Description: This program supports WoT version 0.9.15.0.1 and includes TheManz mo" +
+    "dpack.";
             // 
             // About
             // 

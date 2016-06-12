@@ -15,3 +15,17 @@ C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\WoT Modpack Customizr\ob
 C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.exe.manifest
 C:\Users\jmemmons\Documents\Visual Studio 2015\Projects\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.application
 C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Debug\Mod Pack Customizr.exe.config
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Debug\Mod Pack Customizr.exe.manifest
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Debug\Mod Pack Customizr.application
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Debug\Mod Pack Customizr.exe
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\bin\Debug\Mod Pack Customizr.pdb
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod_Pack_Customizr.About.resources
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod_Pack_Customizr.BusyWindow.resources
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod_Pack_Customizr.Modpack_InstallerUI.resources
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod_Pack_Customizr.Properties.Resources.resources
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\WoT Modpack Customizr.csproj.GenerateResource.Cache
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.TrustInfo.xml
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.exe.manifest
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.application
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.exe
+C:\Users\jmemmons\Documents\GitHub\wot-modpack-customizr\WoT Modpack Customizr\obj\Debug\Mod Pack Customizr.pdb
